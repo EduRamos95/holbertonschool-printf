@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * Control_Spec - choose one option by specifier
  * @format: possible format specifier
