@@ -22,4 +22,9 @@ struct spec
 int _putchar(char c);
 int _printf(const char *format, ...);
 
+/* this functions are inside functions.c */
+int print_char(va_list c);
+int print_string(va_list s);
+int print_mod(va_list args);
+
 #endif
