@@ -27,4 +27,8 @@ int print_char(va_list c);
 int print_string(va_list s);
 int print_mod(va_list args);
 
+/* Functions for i and d specifiers */
+int print_i(va_list i);
+int print_d(va_list d);
+
 #endif

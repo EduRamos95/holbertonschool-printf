@@ -12,6 +12,8 @@ static int (*Control_Spec(const char *format))(va_list)
 		{"c", print_char},
 		{"s", print_string},
 		{"%", print_mod},
+		{"i", print_i},
+		{"d", print_d},
 		{NULL, NULL}
 	};
 
