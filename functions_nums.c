@@ -15,13 +15,6 @@ int print_i(va_list i)
 	count = 0;
 	m = 1000000000;
 
-	if (n < 0)
-	{
-		_putchar('-');
-		count++;
-		n = -n;
-	}
-
 	a[0] = n / m;
 
 	for (j = 1; j < 10; j++)
@@ -29,7 +22,15 @@ int print_i(va_list i)
 		m /= 10;
 		a[j] = (n / m) % 10;
 	}
-
+	if (n < 0)
+	{
+		_putchar('-');
+		count++;
+		for (j = 1; j < 10; j++)
+		{
+			a[j] *= -1;
+		}
+	}
 	for (j = 0, sum = 0; j < 10; j++)
 	{
 		sum += a[j];
@@ -58,19 +59,22 @@ int print_d(va_list d)
 	count = 0;
 	m = 1000000000;
 
-	if (n < 0)
-	{
-		_putchar('-');
-		count++;
-		n = -n;
-	}
-
 	a[0] = n / m;
 
 	for (j = 1; j < 10; j++)
 	{
 		m /= 10;
 		a[j] = (n / m) % 10;
+	}
+
+	if (n < 0)
+	{
+		_putchar('-');
+		count++;
+		for (j = 1; j < 10; j++)
+		{
+			a[j] *= -1;
+		}
 	}
 
 	for (j = 0, sum = 0; j < 10; j++)
