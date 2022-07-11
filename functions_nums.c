@@ -17,7 +17,7 @@ int print_i(va_list i)
 
 	a[0] = n / m;
 
-	for (j = 1; j < 10; j++)
+	for (j = 0; j < 10; j++)
 	{
 		m /= 10;
 		a[j] = (n / m) % 10;
@@ -71,7 +71,7 @@ int print_d(va_list d)
 	{
 		_putchar('-');
 		count++;
-		for (j = 1; j < 10; j++)
+		for (j = 0; j < 10; j++)
 		{
 			a[j] *= -1;
 		}
