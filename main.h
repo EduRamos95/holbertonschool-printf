@@ -32,7 +32,6 @@ int print_i(va_list i);
 int print_d(va_list d);
 
 /* Functions_extra1 */
-static int hex_print(char c);
 int print_S(va_list S);
 int print_r(va_list r);
 
